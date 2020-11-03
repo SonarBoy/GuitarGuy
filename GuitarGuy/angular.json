@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/../node_modules/ng-snotify/styles/material.css"
             ],
             "scripts": [
               "src/assets/smtp.js"
@@ -91,7 +92,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/../node_modules/ng-snotify/styles/material.css"
             ],
             "scripts": [
               "src/assets/smtp.js"

@@ -3,8 +3,6 @@ import { SnotifyService } from 'ng-snotify';
 import { NgForm } from '@angular/forms';
 import '../../assets/smtp.js'; //file path may change → 
 
-//import { ProfileService } from '../profile.service';
-//import { Model } from './contact-form';
 
 declare let Email: any;
 
@@ -16,9 +14,25 @@ declare let Email: any;
 })
 export class ContactComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private snotifyService:SnotifyService) { }
 
   ngOnInit() {
+    this.snotifyService.success('Example body content');
+    this.snotifyService.success('Example body content', 'Example Title');
+
+    this.snotifyService.success('Example body content', {
+      timeout: 2000,
+      showProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: true
+    });
+
+    this.snotifyService.success('Example body content', 'Example title', {
+      timeout: 2000,
+      showProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true
+    });
 
   }
 
@@ -37,7 +51,14 @@ export class ContactComponentComponent implements OnInit {
       <br><br> <b>~End of Message.~</b> `
       }).then(  );
 
-      console.log("TEst");
+      
+      this.snotifyService.success('Example body content', {
+        timeout: 2000,
+        showProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: true
+      });
+
   }
 
   
