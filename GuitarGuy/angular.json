@@ -25,10 +25,13 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/../node_modules/ng-snotify/styles/material.css"
+              "src/../node_modules/ng-snotify/styles/material.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "src/assets/smtp.js"
+              "src/assets/smtp.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -93,10 +96,13 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/../node_modules/ng-snotify/styles/material.css"
+              "src/../node_modules/ng-snotify/styles/material.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "src/assets/smtp.js"
+              "src/assets/smtp.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }
         },

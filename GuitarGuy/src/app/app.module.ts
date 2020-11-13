@@ -10,6 +10,8 @@ import { StoryComponent } from './story/story.component';
 import { PrayersComponent } from './prayers/prayers.component';
 import { LinksComponent } from './links/links.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './partials/header/header.component';
+import { FooterComponent } from './partials/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ContactComponent } from './contact/contact.component';
     StoryComponent,
     PrayersComponent,
     LinksComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
