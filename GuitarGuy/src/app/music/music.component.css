@@ -1,0 +1,12 @@
+.MusicBox{
+    display: inline-block;
+    text-align: center;
+}
+
+.Show{
+    border: 3px solid white;
+}
+
+iframe{
+    display: block;
+}

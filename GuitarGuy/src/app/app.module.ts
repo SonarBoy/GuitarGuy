@@ -12,6 +12,7 @@ import { LinksComponent } from './links/links.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { FooterComponent } from './partials/footer/footer.component';
+import { MusicComponent } from './music/music.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './partials/footer/footer.component';
     LinksComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
