@@ -21,7 +21,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+                
+              "src/prayers/tester.html",
+
+       
+              { "glob": "tester.html", "input": "src/prayers/", "output": "/tester" }
             ],
             "styles": [
               "src/styles.css",
@@ -92,7 +97,12 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+                
+              "src/prayers/tester.html",
+
+       
+              { "glob": "tester.html", "input": "src/prayers/", "output": "/tester" }
             ],
             "styles": [
               "src/styles.css",

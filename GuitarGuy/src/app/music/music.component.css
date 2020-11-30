@@ -1,12 +1,15 @@
+
 .MusicBox{
     display: inline-block;
     text-align: center;
 }
 
-.Show{
-    border: 3px solid white;
+.title{
+    text-align: center;
 }
 
 iframe{
     display: block;
+    text-align:center;
+  	width:100%;
 }
