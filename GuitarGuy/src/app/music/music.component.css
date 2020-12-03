@@ -13,3 +13,8 @@ iframe{
     text-align:center;
   	width:100%;
 }
+
+li{
+    font-family: "RobotoSlab";
+    font-size: large;
+}

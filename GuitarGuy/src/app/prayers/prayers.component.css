@@ -7,3 +7,16 @@
     margin-left: auto;
     margin-right: auto
 }
+
+a{
+    color: rgb(5, 255, 5);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    color: rgba(204,134,0);
+    font-family: "RobotoSlab";
+    background-color: transparent;
+    text-decoration: none;
+  }

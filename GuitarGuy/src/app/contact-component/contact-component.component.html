@@ -1,8 +1,15 @@
 <body class="sheet">
 
     <div class="container">
-        <p>Testing contact Component</p>
-        <input type="button" value="Click Me" (click)="push()">
+
+
+        <form method="POST">
+            <p>Testing contact Component</p>
+            <input type="text" [(address)]="address"><br>
+            <textarea rows="5" cols="20" [(content)]="content"></textarea><br>
+            <input type="button" value="Click Me" (click)="shoutOut()">
+        </form>
+        
     </div>
 
 </body>

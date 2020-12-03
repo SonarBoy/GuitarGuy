@@ -1,0 +1,5 @@
+Lessons Learned (Simple Mistake Documentation Sheet):
+
+Dec 02 2020:
+How to change fonts in Angular: https://reactgo.com/add-fonts-to-angular/
+

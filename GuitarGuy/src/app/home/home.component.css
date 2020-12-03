@@ -5,6 +5,10 @@
 
 .cardInfo{
     text-align: center;
-    
+    font-family: "RobotoSlab";
+    font-size: large;
+    color: rgba(204,134,0);
+    background-color: transparent;
+    text-decoration: none;
 }
 

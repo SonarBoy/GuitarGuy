@@ -1,3 +1,16 @@
+a{
+  color: rgb(5, 255, 5);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "RobotoSlab";
+    color: rgba(204,134,0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 @media (max-width: 575.98px) { 
     .linkCard{
         text-align: center;

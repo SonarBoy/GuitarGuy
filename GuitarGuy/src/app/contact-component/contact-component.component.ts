@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SnotifyService } from 'ng-snotify';
 import { NgForm } from '@angular/forms';
 import '../../assets/smtp.js'; //file path may change → 
@@ -12,13 +12,23 @@ declare let Email: any;
   templateUrl: './contact-component.component.html',
   styleUrls: ['./contact-component.component.css']
 })
+
+
 export class ContactComponentComponent implements OnInit {
+
+  address:String;
+  content:String;
 
   constructor(private snotifyService:SnotifyService) { }
 
   ngOnInit() {
 
 
+  }
+
+  shoutOut(){
+    console.log(this.address);
+    console.log(this.content);
   }
 
   push(){
