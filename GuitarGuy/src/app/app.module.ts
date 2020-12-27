@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { MusicComponent } from './music/music.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MusicComponent } from './music/music.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SnotifyModule
+    SnotifyModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: 'SnotifyToastConfig',useValue: ToastDefaults},

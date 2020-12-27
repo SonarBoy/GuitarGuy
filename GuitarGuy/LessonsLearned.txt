@@ -1,5 +1,51 @@
 Lessons Learned (Simple Mistake Documentation Sheet):
 
 Dec 02 2020:
-How to change fonts in Angular: https://reactgo.com/add-fonts-to-angular/
+1) How to change fonts in Angular: https://reactgo.com/add-fonts-to-angular/
+2) Nobody is self made.
 
+Dec 03 2020:
+1) https://stackoverflow.com/questions/50494949/angular-eventemitter-error-expected-0-type-arguments-but-got-1
+- Bad imports of the wrong package can sometimes be the issue. 
+
+2) https://stackoverflow.com/questions/54475893/typescript-type-x-is-missing-the-following-properties-from-type-y-length-pop
+- Sometimes you may be returning the wrong object but this doesnt exactly apply here. 
+
+3) Revisiting the difference between html attributes and html properties. 
+https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html
+https://javascript.info/dom-attributes-and-properties
+- Easy way to remember this is "Objects have properties!"
+
+4)How to append to controls to forms after you have created them.   
+https://stackoverflow.com/questions/41588325/how-to-append-new-formgroup-or-formcontrol-to-form
+
+
+Dec 07 2020:
+1) Brush of typeof and instanceof.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+
+
+Dec 08 2020
+1) More about angular pipes:
+https://www.angularjswiki.com/angular/angular-currency-pipe-formatting-currency-in-angular/
+
+Dec 20 2020
+1) Duplicate a line in Vs Code:
+https://www.google.com/search?client=firefox-b-d&q=duplicate+line+vscode
+
+2) How to retrieve the value from a control in a specific form control group
+https://stackoverflow.com/questions/47827634/how-to-read-form-values-in-controller/47827703
+
+3) Clear values in a form control group
+https://stackoverflow.com/questions/34742023/how-to-clear-form-after-submit-in-angular-2
+
+Dec 25 2020
+1) The [] in angular tie the form fields to the actual form control variable. Also you the outer most div must have the FormArray name in the formArrayName tage to work and to reference the correct array of controls.
+https://stackoverflow.com/questions/43437726/angular-2-cannot-find-control-with-unspecified-name-attribute-on-formarrays
+
+Dec 26 2020
+1) You have to put all your validators in an array as the second argument for the form control.
+email: ['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]]
+
+https://blog.mailtrap.io/angular-email-validation/

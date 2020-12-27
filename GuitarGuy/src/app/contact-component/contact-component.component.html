@@ -3,13 +3,39 @@
     <div class="container">
 
 
-        <form method="POST">
+        <!-- <form #emailForm >
             <p>Testing contact Component</p>
-            <input type="text" [(address)]="address"><br>
-            <textarea rows="5" cols="20" [(content)]="content"></textarea><br>
-            <input type="button" value="Click Me" (click)="shoutOut()">
-        </form>
+            <input #returnAddress type="text" ><br>
+            <textarea #subjectBody rows="5" cols="20" ></textarea><br>
+            <input type="button" value="Click Me" (click)="shoutOut(returnAddress.value,subjectBody.value)">
+        </form> -->
         
+        <form  [formGroup]="contactForm" action="" (ngSubmit)="push()">
+            <label>
+                Name:
+            <input formControlName="name" type="text">
+            </label>
+
+            <br>
+
+            <label>
+                Email:
+            <input formControlName="email" type="text">
+            </label>
+
+            <br>
+
+            <label>
+                Comments:
+            <textarea formControlName="comments" rows="4" cols="50">
+            </textarea>    
+            </label>
+
+            <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+
+        </form>
+
+
     </div>
 
 </body>
