@@ -45,43 +45,42 @@ export class ContactComponentComponent implements OnInit {
 
   push(){
     
-    // Email.send({
-    //   Host : 'smtp.elasticemail.com',
-    //   Username : 'joshua.l99.c@gmail.com',
-    //   Password : 'ACAD3CF2E6C5B6745DA8A8B9A3CBA70BEA7F',
-    //   To : 'joshua.l99.c@gmail.com',
-    //   From : this.contactForm.get('email').value,
-    //   Subject : 'Testing',
-    //   Body : `<i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: </b>
-    //    <br /> <b>Email: </b><br /> <b>Subject: </b>
-    //   <br /> <b>Message:</b> <br /> 
-    //   <br><br> <b>~End of Message.~</b> `
-    //   }).then(  );
+    Email.send({
+      Host : 'smtp.elasticemail.com',
+      Username : 'joshua.l99.c@gmail.com',
+      Password : 'ACAD3CF2E6C5B6745DA8A8B9A3CBA70BEA7F',
+      To : 'joshua.l99.c@gmail.com',
+      From : this.contactForm.get('email').value,
+      Subject : 'Testing',
+      Body : "Name: " + this.contactForm.get('name').value + " <br>" + 
+      "Comment: " + this.contactForm.get('comments').value
+
+      }).then(  );
 
       
-    //   this.snotifyService.success('Example body content', {
-    //     timeout: 2000,
-    //     showProgressBar: true,
-    //     closeOnClick: false,
-    //     pauseOnHover: true
-    //   });
+      this.snotifyService.success('Example body content', {
+        timeout: 2000,
+        showProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: true
+      });
 
-    //   this.snotifyService.success('Example body content');
-    //   this.snotifyService.success('Example body content', 'Example Title');
+      this.snotifyService.success('Example body content');
+      this.snotifyService.success('Example body content', 'Example Title');
   
-    //   this.snotifyService.success('Example body content', {
-    //     timeout: 2000,
-    //     showProgressBar: true,
-    //     closeOnClick: false,
-    //     pauseOnHover: true
-    //   });
+      this.snotifyService.success('Example body content', {
+        timeout: 2000,
+        showProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: true
+      });
   
-    //   this.snotifyService.success('Example body content', 'Example title', {
-    //     timeout: 2000,
-    //     showProgressBar: false,
-    //     closeOnClick: false,
-    //     pauseOnHover: true
-    //   });
+      this.snotifyService.success('Example body content', 'Example title', {
+        timeout: 2000,
+        showProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true
+      });
 
       console.log("Name" +this.contactForm.get('name').value);
       console.log("Email" +this.contactForm.get('email').value);
